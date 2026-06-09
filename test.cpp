@@ -1,16 +1,17 @@
 #include <iostream>
-#include <vector>
-#include <string>
-
 using namespace std;
 
-int main()
-{
-    vector<string> msg {"Hello", "C++", "World", "from", "Balakrishna sfsdfsdfsdfsdfsdf Code", "and the C++ extension!"};
+int main() {
+    int n, i;
 
-    for (const string& word : msg)
-    {
-        cout << word << " ";
+    cout << "Enter a positive integer: ";
+    cin >> n;
+
+    cout << "Factors of " << n << " are: ";  //print statement
+    for(i = 1; i <= n; ++i) {
+        if(n % i == 0)
+            cout << i << " ";
     }
-    cout << endl;
+
+    return 0;
 }
