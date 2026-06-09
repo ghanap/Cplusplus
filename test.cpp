@@ -1,6 +1,16 @@
-// Your First C++ Program
 #include <iostream>
-int main() {
-    std::cout << "Hello World!";
-    return 0;
+#include <vector>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    vector<string> msg {"Hello", "C++", "World", "from", "Balakrishna sfsdfsdfsdfsdfsdf Code", "and the C++ extension!"};
+
+    for (const string& word : msg)
+    {
+        cout << word << " ";
+    }
+    cout << endl;
 }
